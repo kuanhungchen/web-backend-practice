@@ -7,4 +7,3 @@
 	}
 	$_SESSION['username'] = "u5er";
 ?>
-
