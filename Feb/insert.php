@@ -1,5 +1,4 @@
 <?php
-#session_start();
 	require('login.php');
 	echo "<pre>";
 	echo "Now insert student to " . $_SESSION["username"] . "\n";
