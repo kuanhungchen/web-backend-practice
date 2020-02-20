@@ -10,7 +10,8 @@
 	<div class="row">
 		<?php require("../nav.php"); ?>
 	</div>
-	It's task/index.php here.
+	<br>
+	This is task page.
 </div>
 </body>
 </html>

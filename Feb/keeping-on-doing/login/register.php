@@ -14,7 +14,7 @@
 <body>
 	<div class="container">
 		<h3 align="center">REGISTER</h3>
-		<form method="post" action="../setting/userop.php?action=register">
+		<form method="post" action="../settings/userop.php?action=register">
 			<div class="form-group">
 				<label for="name">Name</label>
 				<input type="text" class="form-control" id="name" name="name" required>

@@ -2,32 +2,33 @@ $(document).ready(function() {
 	$password_check = true;
 	
 	$("#password_not_match").hide();
+
 	$("#password_check").keyup(function() {
-		if ($("#password").val() != $("#password_check").val()) {
+		if ($("#password_check").val() != $("#password").val()) {
 			$("#password_not_match").show();
 			$password_check = false;
-			check();
+			chk();
 		} else {
 			$("#password_not_match").hide();
 			$password_check = true;
-			check();
+			chk();
 		}
 	});
 
-	$("#password_check").focusout(function() {
-		if ($("#password").val() != $("#password_check").val()) {
+	$("#password").focusout(function() {
+		if ($("#password_check").val() != $("#password").val()) {
 			$("#password_not_match").show();
 			$password_check = false;
-			check();
+			chk();
 		} else {
 			$("#password_not_match").hide();
 			$password_check = true;
-			check();
+			chk();
 		}
 	});
 });
 
-function check() {
+function chk() {
 	if ($password_check) {
 		$("#submit").removeClass("disabled");
 		$("#submit").prop('disabled', false);
