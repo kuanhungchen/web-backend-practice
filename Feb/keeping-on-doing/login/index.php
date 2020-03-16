@@ -42,20 +42,20 @@
 					Account not found.
 				</div>
 			<?php } else if (isset($_GET["status"]) && $_GET["status"] == "logreq") {?>
-					<div class="alert alert-danger alert-dismissable">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						Please log in.
-					</div>
+				<div class="alert alert-warning alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					Please log in.
+				</div>
 			<?php } else if (isset($_GET["status"]) && $_GET["status"] == "logout") {?>
-					<div class="alert alert-danger alert-dismissable">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						Logged out successfully.
-					</div>
+				<div class="alert alert-success alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					Logged out successfully.
+				</div>
 			<?php } else if (isset($_GET["status"]) && $_GET["status"] == "registered") {?>
-					<div class="alert alert-danger alert-dismissable">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						Registered successfully.
-					</div>
+				<div class="alert alert-success alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					Registered successfully.
+				</div>
 			<?php }?>
 	</div>
 </div>
